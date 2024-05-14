@@ -1,6 +1,6 @@
-import Header from './components/Header'
-import data from './data'
-import Skill from './components/Skill'
+import Header from '../components/Header'
+import data from '../src/data'
+import Skill from '../components/Skill'
 import './App.css'
 
 function App() {
