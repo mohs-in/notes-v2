@@ -6,10 +6,10 @@ import './App.css'
 function App() {
   const skills = data.map(skill => <Skill key={skill.id} {...skill} />)
   return (
-    <>
+    <div className='flex items-center flex-col bg-gray-900 h-screen'>
       <Header />
-      <div className='bg-gray-100'>{skills}</div>
-    </>
+      <div className='mt-8 '>{skills}</div>
+    </div>
   )
 }
 
