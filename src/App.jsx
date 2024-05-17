@@ -8,7 +8,7 @@ function App() {
   return (
     <div className='flex items-center flex-col bg-gray-900 h-screen'>
       <Header />
-      <div className='mt-8 '>{skills}</div>
+      <div className='mt-8 flex flex-col md:flex-row'>{skills}</div>
     </div>
   )
 }
