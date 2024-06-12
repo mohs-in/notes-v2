@@ -10,7 +10,6 @@ function App() {
     <div className='flex items-center flex-col bg-gray-900 h-screen'>
       <Header />
       <div className='mt-8 flex flex-col md:flex-row'>{skills}</div>
-      <a className='j17' href="https://mohsinkhan.notion.site/J17-6733c1b6610943f8a636d5fedad76a55?pvs=4">J17</a>
       <Footer />
     </div>
   )
