@@ -7,7 +7,7 @@ import './App.css';
 function App() {
   const skills = data.map(skill => <Skill key={skill.id} {...skill} />)
   return (
-    <div className='flex items-center flex-col bg-gray-900 h-full'>
+    <div className='flex items-center flex-col bg-gray-900 h-full sm:h-screen'>
       <Header />
       <div className='mt-8 flex flex-col md:flex-row'>{skills}</div>
       <Footer />
