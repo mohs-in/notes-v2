@@ -1,5 +1,11 @@
 export default [
     {
+        id: 4, 
+        skill: 'Hooks in React',
+        link: 'https://mohsinkhan.notion.site/Hooks-in-React-js-fca1434b70d046bc862b6b36c0a80d08?pvs=4',
+        reference: 'https://react.dev/reference/react/hooks',
+    },
+    {
         id: 3,
         skill: 'Spring & Microservices',
         link: 'https://mohsinkhan.notion.site/J17-6733c1b6610943f8a636d5fedad76a55?pvs=4',
