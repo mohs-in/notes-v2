@@ -98,7 +98,7 @@ function App() {
                   htmlFor='file-select'
                   className='text-gray-400 mr-3 text-sm hidden sm:inline'
                 >
-                  Select Diagram:
+                  Select Board:
                 </label>
                 <select
                   id='file-select'
@@ -108,7 +108,7 @@ function App() {
                 >
                   {availableNotes.map((fullPath) => (
                     <option key={fullPath} value={fullPath}>
-                      {fullPath.replace('src/notes/', '')}
+                      {fullPath.replace('src/notes/', '').replace('.excalidraw', '')}
                     </option>
                   ))}
                 </select>
@@ -135,9 +135,9 @@ function App() {
         </div>
 
         <div
-          className={`bg-white rounded-b-lg shadow-xl ${isFullScreen ? 'h-[calc(100vh-80px)]' : 'h-[550px]'}`}
+          className={`rounded-b-lg shadow-xl ${isFullScreen ? 'h-[calc(100vh-80px)]' : 'h-[550px]'}`}
         >
-          <ExcalidrawViewer filePath={selectedFilePath} />
+          <ExcalidrawViewer filePath={selectedFilePath} isFullScreen={isFullScreen} />
         </div>
       </div>
 

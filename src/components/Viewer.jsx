@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const GITHUB_BASE_URL =
   'https://raw.githubusercontent.com/mohs-in/notes-v2/main/';
 
-export default function ExcalidrawViewer({ filePath }) {
+export default function ExcalidrawViewer({ filePath, isFullScreen }) {
   const [initialData, setInitialData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -76,7 +76,7 @@ export default function ExcalidrawViewer({ filePath }) {
 
   return (
     <>
-      <div style={{ height: '100%' }}>
+      <div style={{ height: isFullScreen ? '95%' : '100%' }}>
         <Excalidraw initialData={initialData} />
       </div>
     </>
@@ -85,4 +85,5 @@ export default function ExcalidrawViewer({ filePath }) {
 
 ExcalidrawViewer.propTypes = {
   filePath: PropTypes.string.isRequired,
+  isFullScreen: PropTypes.bool.isRequired,
 };
