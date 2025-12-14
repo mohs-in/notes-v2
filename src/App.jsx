@@ -22,7 +22,7 @@ function App() {
       availableNotes.length > 0 &&
       selectedFilePath === null
     ) {
-      setSelectedFilePath('Default.excalidraw');
+      setSelectedFilePath('src/notes/Default.excalidraw');
     }
   }, [isNotesLoading, availableNotes, selectedFilePath]);
 
