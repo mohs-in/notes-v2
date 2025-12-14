@@ -22,7 +22,7 @@ function App() {
       availableNotes.length > 0 &&
       selectedFilePath === null
     ) {
-      setSelectedFilePath(availableNotes[0]);
+      setSelectedFilePath('Default.excalidraw');
     }
   }, [isNotesLoading, availableNotes, selectedFilePath]);
 
@@ -108,7 +108,9 @@ function App() {
                 >
                   {availableNotes.map((fullPath) => (
                     <option key={fullPath} value={fullPath}>
-                      {fullPath.replace('src/notes/', '').replace('.excalidraw', '')}
+                      {fullPath
+                        .replace('src/notes/', '')
+                        .replace('.excalidraw', '')}
                     </option>
                   ))}
                 </select>
@@ -137,7 +139,10 @@ function App() {
         <div
           className={`rounded-b-lg shadow-xl ${isFullScreen ? 'h-[calc(100vh-80px)]' : 'h-[550px]'}`}
         >
-          <ExcalidrawViewer filePath={selectedFilePath} isFullScreen={isFullScreen} />
+          <ExcalidrawViewer
+            filePath={selectedFilePath}
+            isFullScreen={isFullScreen}
+          />
         </div>
       </div>
 
