@@ -20,7 +20,7 @@ export default [
   {
     id: 1,
     skill: 'GIT',
-    link: 'https://gitnotes-ms.vercel.app',
+    link: 'https://mohs-in.github.io/gitnotes/',
     reference: 'https://git-scm.com/docs',
   },
 ];
