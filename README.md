@@ -56,7 +56,7 @@ This application relies on a specific file structure to fetch and display notes:
 
 ##  Made my  **me :)**
 
-[Website](https://mohsin-khansab.vercel.app)
+[Website](https://mohs-in.github.io/portfolio/)
 
 ***
 
