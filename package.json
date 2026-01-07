@@ -10,6 +10,7 @@
     "start": "vite --host",
     "dev": "vite --host",
     "build": "vite build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,css,json}\"",
     "check": "prettier --check \"./src/**/*.{js,jsx,ts,tsx,css,json}\"",
