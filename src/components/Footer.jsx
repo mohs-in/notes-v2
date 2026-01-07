@@ -1,5 +1,5 @@
 export default function Footer() {
-  const MY_WEBSITE_URL = 'https://mohsin-khansab.vercel.app';
+  const MY_WEBSITE_URL = 'https://khansab.in';
   const MY_WEBSITE_TEXT = 'Mohsin Khansab';
 
   return (
